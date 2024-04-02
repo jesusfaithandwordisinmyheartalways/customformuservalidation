@@ -1,0 +1,276 @@
+
+:root {
+    --white:white;
+    --black:black;
+    --dodgerblue: dodgerblue;
+    --purple: purple;
+    --grey:rgb(128, 128, 128);
+    --red:red;
+    --green:rgb(59, 184, 59);
+}
+
+
+
+body {
+    background-image: url('/images/form-background-image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right;
+    overflow: hidden;
+}
+
+
+.User-Login-Container {
+    position: relative;
+    top:99px;
+    left:490px;
+    background-color: var(--white);
+    height:510px;
+    width:510px;
+    border-radius: 10px;
+}
+
+
+
+.Form-Container h2 {
+    position: absolute;
+    color:var(--green);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:2rem;
+    top:30px;
+    left:200px;
+}
+
+.Input-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:575px
+}
+
+.user-inputs {
+    flex-basis:75px;
+}
+
+.user-inputs input {
+    border: 2px solid black;
+    outline:none;
+    font-size: clamp(1rem, 1vw, 1.9rem);
+    width:310px;
+    padding:0.5em 1em;
+    transition: 0.6s linear
+}
+
+
+.user-inputs input::placeholder {
+    caret-color: red;
+    color:var(--grey)
+}
+
+.user-inputs input:invalid{
+    border: 2px solid var(--red);
+}
+
+
+
+.user-icon {
+    color:var(--red);  
+    transition: 0.6s;
+}
+
+
+
+
+.eye-icon {
+    visibility: visible;
+    color:var(--red);  
+    transition: 0.6s;
+}
+
+.eye-off-icon {
+    position: absolute;
+    visibility: hidden;
+    font-size: 1rem;
+    top:40%;
+    left: 14%;
+    color:purple;
+    font-weight: 600;
+
+}
+
+
+
+.email-icon {
+    color:var(--red);  
+    transition: 0.6s;
+    
+}
+
+
+
+.phone-icon {
+    color:var(--red);  
+    transition: 0.6s;
+}
+
+
+
+
+
+.user-inputs input:valid {
+    border: 2px solid var(--green)
+}
+
+
+
+.user-inputs input:focus {
+    border: 2px solid dodgerblue
+}
+
+::placeholder:focus {
+    color:none;
+}
+
+.login-error {
+    position: absolute;
+    display: none;
+    top:163px;
+    left: 150px;
+    color:var(--red);
+    width:210px;
+    font-size: 0.8rem;
+    font-weight: 900;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.password-error {
+    position: absolute;
+    display: block;
+    top:240px;
+    left: 150px;
+    color:var(--red);
+    width:210px;
+    font-size: 0.8rem;
+    font-weight: 900;
+    font-family:Arial, Helvetica, sans-serif
+
+}
+
+.email-error {
+    position: absolute;
+    display: block;
+    top:310px;
+    left: 165px;
+    color:var(--red);
+    width:210px;
+    font-size: 0.8rem;
+    font-weight: 900;
+    font-family:Arial, Helvetica, sans-serif
+    
+}
+
+.phone-error {
+    position: absolute;
+    display: block;
+    top:389px;
+    left: 165px;
+    color:var(--red);
+    width:210px;
+    font-size: 0.8rem;
+    font-weight: 900;
+    font-family:Arial, Helvetica, sans-serif
+
+}
+
+
+.User-Btn {
+    display: flex;
+    flex-direction: row;
+    
+   
+}
+
+.User-Btn button {
+    margin: 0px 10px;
+    padding:0.5em 1em;
+    color:var(--white);
+    font-size: 1rem;
+    cursor: pointer;
+    border:none;
+    outline:none;
+}
+
+.user-btn {
+    background-color:var(--purple)
+}
+
+.user-btn:hover {
+    background-color:var(--dodgerblue)
+}
+
+.user-btn-two {
+    background-color:grey;
+}
+
+.user-btn-two:hover {
+    background: var(--green);
+}
+
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+  .User-Login-Container {
+    position: relative;
+    width: auto;
+    height:auto;
+    top:10px;
+    left: 0px;
+  }
+  
+   body {
+    background-image:none
+   }
+
+   .Input-Container {
+    height:500px
+   }
+   .user-inputs input {
+    width:240px
+   }
+
+   .Form-Container h2 {
+    position: absolute;
+    top:-10px;
+    left:98px
+   }
+
+   .login-error {
+    position: absolute;
+    top:130px;
+    left:70px;
+   }
+
+   .password-error {
+    position: absolute;
+    top:205px;
+    left: 70px;
+   }
+
+   .email-error {
+    position: absolute;
+    top:280px;
+    left:70px;
+   }
+
+   .phone-error {
+    position: absolute;
+    top:353px;
+    left: 70px;
+   }
+}
