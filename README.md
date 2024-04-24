@@ -1,11 +1,12 @@
 CUSTOM USER FROM VALIDATION 
 
-This is custom form user validation on an local host. Has design for mobile screens also. Custom alert once validation is completed. 
+This is custom form user validation on an local host. Has design for mobile screens also. Custom alert once form validation is completed. 
 
 
 
 Features:
- - Desing layout for mobile screens
+ - Design layout for mobile screens
+ - Design layout for laptop screens
 
 
 
